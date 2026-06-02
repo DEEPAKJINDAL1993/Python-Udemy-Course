@@ -9,7 +9,7 @@ jobs:
 
     env:
       TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
-      TWILIO_AUTH_TOKEN: ${{ secrets.223c89c940a9dd398d9714e0e8f2a49e }}
+      TWILIO_AUTH_TOKEN: ${{ secrets.TWILIO_AUTH_TOKEN }}
       OW_API_KEY: ${{ secrets.OW_API_KEY }}
 
     steps:
