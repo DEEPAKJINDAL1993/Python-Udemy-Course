@@ -1,0 +1,285 @@
+<html>
+<head>
+<style>
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        padding: 20px;
+    }
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));  /* Increased min-width for tiles */
+        gap: 20px;
+    }
+    .tile {
+        background-color: white;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;  /* Increased padding */
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+        overflow: hidden;  /* Prevent overflow */
+        word-wrap: break-word;  /* Ensure long text wraps properly */
+    }
+    .tile:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+    .tile h3 {
+        margin-top: 0;
+        font-size: 20px;
+        background-color: #007BFF;
+        color: white;
+        padding: 12px;  /* Increased padding */
+        border-radius: 5px;
+        text-align: center;  /* Center title */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    td, th {
+        padding: 10px;  /* Increased padding for better spacing */
+        text-align: left;
+        font-size: 14px;
+    }
+    td {
+        font-weight: 400;
+        color: #333;
+    }
+    th {
+        font-weight: 600;
+        color: #007BFF;
+    }
+    </style>
+</head>
+<body>
+<div class="grid-container">
+<div class="tile">
+<h3>Info</h3>
+<table>
+<tr><th>symbol</th><td>RELIANCE</td></tr>
+<tr><th>companyName</th><td>Reliance Industries Limited</td></tr>
+<tr><th>industry</th><td>Refineries & Marketing</td></tr>
+<tr><th>activeSeries</th><td><ul>
+<li>EQ</li>
+</ul>
+</td></tr>
+<tr><th>debtSeries</th><td><ul>
+</ul>
+</td></tr>
+<tr><th>isFNOSec</th><td>True</td></tr>
+<tr><th>isCASec</th><td>False</td></tr>
+<tr><th>isSLBSec</th><td>True</td></tr>
+<tr><th>isDebtSec</th><td>False</td></tr>
+<tr><th>isSuspended</th><td>False</td></tr>
+<tr><th>tempSuspendedSeries</th><td><ul>
+</ul>
+</td></tr>
+<tr><th>isETFSec</th><td>False</td></tr>
+<tr><th>isDelisted</th><td>False</td></tr>
+<tr><th>isin</th><td>INE002A01018</td></tr>
+<tr><th>slb_isin</th><td>INE002A01018</td></tr>
+<tr><th>isMunicipalBond</th><td>False</td></tr>
+<tr><th>isTop10</th><td>False</td></tr>
+<tr><th>identifier</th><td>RELIANCEEQN</td></tr>
+</table>
+</div>
+<div class="tile">
+<h3>Metadata</h3>
+<table>
+<tr><th>series</th><td>EQ</td></tr>
+<tr><th>symbol</th><td>RELIANCE</td></tr>
+<tr><th>isin</th><td>INE002A01018</td></tr>
+<tr><th>status</th><td>Listed</td></tr>
+<tr><th>listingDate</th><td>29-Nov-1995</td></tr>
+<tr><th>industry</th><td>Refineries & Marketing</td></tr>
+<tr><th>lastUpdateTime</th><td>04-Oct-2024 16:00:00</td></tr>
+<tr><th>pdSectorPe</th><td>24.44</td></tr>
+<tr><th>pdSymbolPe</th><td>24.44</td></tr>
+<tr><th>pdSectorInd</th><td>NIFTY 50</td></tr>
+<tr><th>pdSectorIndAll</th><td><ul>
+<li>NIFTY 50</li>
+<li>NIFTY500 MULTICAP INFRASTRUCTURE 50:30:20</li>
+<li>NIFTY INFRASTRUCTURE</li>
+<li>NIFTY 500</li>
+<li>NIFTY 200</li>
+<li>NIFTY COMMODITIES</li>
+<li>NIFTY100 LIQUID 15</li>
+<li>NIFTY LOW VOLATILITY 50</li>
+<li>NIFTY100 EQUAL WEIGHT</li>
+<li>NIFTY ALPHA LOW-VOLATILITY 30</li>
+<li>NIFTY100 LOW VOLATILITY 30</li>
+<li>NIFTY50 EQUAL WEIGHT</li>
+<li>NIFTY LARGEMIDCAP 250</li>
+<li>NIFTY100 ESG SECTOR LEADERS</li>
+<li>NIFTY OIL & GAS</li>
+<li>NIFTY500 EQUAL WEIGHT</li>
+<li>NIFTY TOTAL MARKET</li>
+<li>NIFTY TOP 10 EQUAL WEIGHT</li>
+<li>NIFTY500 MULTICAP INDIA MANUFACTURING 50:30:20</li>
+<li>NIFTY500 MULTICAP 50:25:25</li>
+<li>NIFTY100 ESG</li>
+<li>NIFTY500 LARGEMIDSMALL EQUAL-CAP WEIGHTED</li>
+<li>NIFTY MOBILITY</li>
+<li>NIFTY EV & NEW AGE AUTOMOTIVE</li>
+<li>NIFTY INDIA MANUFACTURING</li>
+<li>NIFTY 100</li>
+<li>NIFTY ENERGY</li>
+</ul>
+</td></tr>
+</table>
+</div>
+<div class="tile">
+<h3>Securityinfo</h3>
+<table>
+<tr><th>boardStatus</th><td>Main</td></tr>
+<tr><th>tradingStatus</th><td>Active</td></tr>
+<tr><th>tradingSegment</th><td>Normal Market</td></tr>
+<tr><th>sessionNo</th><td>-</td></tr>
+<tr><th>slb</th><td>Yes</td></tr>
+<tr><th>classOfShare</th><td>Equity</td></tr>
+<tr><th>derivatives</th><td>Yes</td></tr>
+<tr><th>surveillance</th><td><table>
+<tr><th>surv</th><td>None</td></tr>
+<tr><th>desc</th><td>None</td></tr>
+</table>
+</td></tr>
+<tr><th>faceValue</th><td>10</td></tr>
+<tr><th>issuedSize</th><td>6765875768</td></tr>
+</table>
+</div>
+<div class="tile">
+<h3>Sdddetails</h3>
+<table>
+<tr><th>SDDAuditor</th><td>-</td></tr>
+<tr><th>SDDStatus</th><td>-</td></tr>
+</table>
+</div>
+<div class="tile">
+<h3>Priceinfo</h3>
+<table>
+<tr><th>lastPrice</th><td>2771.5</td></tr>
+<tr><th>change</th><td>-42.44999999999982</td></tr>
+<tr><th>pChange</th><td>-1.5085555891184925</td></tr>
+<tr><th>previousClose</th><td>2813.95</td></tr>
+<tr><th>open</th><td>2807.85</td></tr>
+<tr><th>close</th><td>2773.05</td></tr>
+<tr><th>vwap</th><td>2796.15</td></tr>
+<tr><th>stockIndClosePrice</th><td>None</td></tr>
+<tr><th>lowerCP</th><td>2532.55</td></tr>
+<tr><th>upperCP</th><td>3095.30</td></tr>
+<tr><th>pPriceBand</th><td>No Band</td></tr>
+<tr><th>basePrice</th><td>2813.95</td></tr>
+<tr><th>intraDayHighLow</th><td><table>
+<tr><th>min</th><td>2763.55</td></tr>
+<tr><th>max</th><td>2834.7</td></tr>
+<tr><th>value</th><td>2771.5</td></tr>
+</table>
+</td></tr>
+<tr><th>weekHighLow</th><td><table>
+<tr><th>min</th><td>2220.3</td></tr>
+<tr><th>minDate</th><td>26-Oct-2023</td></tr>
+<tr><th>max</th><td>3217.6</td></tr>
+<tr><th>maxDate</th><td>08-Jul-2024</td></tr>
+<tr><th>value</th><td>2771.5</td></tr>
+</table>
+</td></tr>
+<tr><th>iNavValue</th><td>None</td></tr>
+<tr><th>checkINAV</th><td>False</td></tr>
+<tr><th>tickSize</th><td>0.05</td></tr>
+</table>
+</div>
+<div class="tile">
+<h3>Industryinfo</h3>
+<table>
+<tr><th>macro</th><td>Energy</td></tr>
+<tr><th>sector</th><td>Oil Gas & Consumable Fuels</td></tr>
+<tr><th>industry</th><td>Petroleum Products</td></tr>
+<tr><th>basicIndustry</th><td>Refineries & Marketing</td></tr>
+</table>
+</div>
+<div class="tile">
+<h3>Preopenmarket</h3>
+<table>
+<tr><th>preopen</th><td><ul>
+<li><table>
+<tr><th>price</th><td>2532.6</td></tr>
+<tr><th>buyQty</th><td>0</td></tr>
+<tr><th>sellQty</th><td>14</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>2533</td></tr>
+<tr><th>buyQty</th><td>0</td></tr>
+<tr><th>sellQty</th><td>16</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>2638</td></tr>
+<tr><th>buyQty</th><td>0</td></tr>
+<tr><th>sellQty</th><td>3</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>2638.5</td></tr>
+<tr><th>buyQty</th><td>0</td></tr>
+<tr><th>sellQty</th><td>103</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>2807.85</td></tr>
+<tr><th>buyQty</th><td>0</td></tr>
+<tr><th>sellQty</th><td>0</td></tr>
+<tr><th>iep</th><td>True</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>2995</td></tr>
+<tr><th>buyQty</th><td>1</td></tr>
+<tr><th>sellQty</th><td>0</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>3076</td></tr>
+<tr><th>buyQty</th><td>1</td></tr>
+<tr><th>sellQty</th><td>0</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>3076.1</td></tr>
+<tr><th>buyQty</th><td>37</td></tr>
+<tr><th>sellQty</th><td>0</td></tr>
+</table>
+</li>
+<li><table>
+<tr><th>price</th><td>3095</td></tr>
+<tr><th>buyQty</th><td>27</td></tr>
+<tr><th>sellQty</th><td>0</td></tr>
+</table>
+</li>
+</ul>
+</td></tr>
+<tr><th>ato</th><td><table>
+<tr><th>buy</th><td>8557</td></tr>
+<tr><th>sell</th><td>2374</td></tr>
+</table>
+</td></tr>
+<tr><th>IEP</th><td>2807.85</td></tr>
+<tr><th>totalTradedVolume</th><td>108758</td></tr>
+<tr><th>finalPrice</th><td>2807.85</td></tr>
+<tr><th>finalQuantity</th><td>108758</td></tr>
+<tr><th>lastUpdateTime</th><td>04-Oct-2024 09:07:43</td></tr>
+<tr><th>totalBuyQuantity</th><td>164486</td></tr>
+<tr><th>totalSellQuantity</th><td>110680</td></tr>
+<tr><th>atoBuyQty</th><td>8557</td></tr>
+<tr><th>atoSellQty</th><td>2374</td></tr>
+<tr><th>Change</th><td>-6.099999999999909</td></tr>
+<tr><th>perChange</th><td>-0.21677712823610618</td></tr>
+<tr><th>prevClose</th><td>2813.95</td></tr>
+</table>
+</div>
+</div>
+</body>
+</html>
