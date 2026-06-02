@@ -9,8 +9,8 @@ OWM_Endpoint = "https://api.openweathermap.org/data/2.5/forecast"
 MY_LAT = 30.100329
 MY_LONG = 75.682019
 
-params = {"lat": 20.8,
-          "lon": 84.23 ,
+params = {"lat": 31.7,
+          "lon": 134.7 ,
           "cnt":4,
           "units": "metric",
           "lang": "en",
