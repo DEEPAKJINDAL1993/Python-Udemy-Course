@@ -3,6 +3,9 @@ name: Run Day 35 API Project
 on:
   workflow_dispatch:
 
+  schedule:
+    - cron: '30 3 * * *'
+
 jobs:
   run-day35:
     runs-on: ubuntu-latest
