@@ -1,0 +1,31 @@
+name: Run Day 35 API Project
+
+on:
+  workflow_dispatch:
+
+jobs:
+  run-day35:
+    runs-on: ubuntu-latest
+
+    env:
+      TWILIO_ACCOUNT_SID: ${{ secrets.TWILIO_ACCOUNT_SID }}
+      TWILIO_AUTH_TOKEN: ${{ secrets.223c89c940a9dd398d9714e0e8f2a49e }}
+      OW_API_KEY: ${{ secrets.OW_API_KEY }}
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Day 35 Script
+        run: |
+          python "Day 35 - APIs with authentication/main.py"
