@@ -32,4 +32,4 @@ jobs:
 
       - name: Run Day 35 Script
         run: |
-          python "Day 35 - APIs with authentication/main.py"
+          python "Day-35-APIs with authentication/main.py"
